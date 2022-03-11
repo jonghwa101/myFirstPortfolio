@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    background-color: lightgrey;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    justify-content: space-between;
+    background-color: gray;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    background-color: blue;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px;
+    min-width: 40vw;
+}
+
+.nav-link a {
+font-size: 20px;
+color: blue;
+border-bottom: 2px solid blue;
+margin-right: 20px;
+}
+
+.hero-image {
+    height: 400px;
+    width: 100%;
+}
+
+h2 {
+    display: flex;
+    flex: 1 1 20%;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.about-me {
+    display: flex;
+    padding: 10px;
+}
+
+.about-me article {
+    display: flex;
+    width: 90vw;
+    border-left: 5px solid blue;
+}
+
+.about-me p {
+    padding: 30px;
+    margin-left: 10px;
+    font-size: 18px;
+    display: block;
+}
+
+.about-me img {
+    padding-left: 10px;
+    width: 376px;
+    height: 361px;
+}
+
+.work {
+    display: flex;
+}
+
+.work-links {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border-left: 5px solid blue;
+    width: 89vw;
+}
+
+.work-links div {
+    background-color: lightgrey;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    min-width: 500px;
+    position: relative;
+    margin: 10px;
+    border: 5px solid blue;
+    opacity: 0.8;
+}
+
+.work-links div:hover {
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3) 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.main-project {
+    background-image: url('../Assets/images/mainProject.jpg');
+}
+
+.project-2 {
+    background-image: url('../Assets/images/keyboard.jpg');
+}
+
+.project-3 {
+    background-image: url('../Assets/images/microphone.jpg');
+}
+
+.project-4 {
+    background-image: url('../Assets/images/headphone.jpg');
+}
+
+.project-5 {
+    background-image: url('../Assets/images/mouse.jpg');
+}
+
+.work-links a:first-child {
+    flex: 1 1 100%;
+}
+
+.work-links a {
+    flex: 1 1 50%;
+}
+
+.work-links p {
+    display: flex;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    position: absolute;
+}
+
+.contact-me {
+    display: flex;
+    padding: 10px;
+}
+
+.contact-me ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    font-size: 20px;
+    align-items: center;
+    border-left: 5px solid blue;
+    justify-content: space-between;
+}
+
+.contact-me ul li {
+    border-bottom: 3px solid blue;
+    margin: 15px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact-me ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-me footer {
+    display: flex;
+    width: 89vw;
+}
+
+@media screen and (max-width: 768px) {
+    .about-me article {
+        display: block;
+    }
+}
